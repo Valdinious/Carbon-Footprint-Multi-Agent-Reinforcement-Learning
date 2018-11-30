@@ -143,10 +143,6 @@ cumulative rewards and global states for the three different policies, “Utilit
 defined by the cumulative reward function, the final global state is defined as the final average per 
 capita CO2 consumption of all agents combined. 
 
-<br> | <br>| <br>5 Periods| <br>10 Periods| <br>15 Periods| <br>20 Periods| <br>25 Periods| <br>30 Periods
---- | ---
-
-
 See table in repository version, or https://colab.research.google.com/github/Valdini/Carbon-Footprint-Multi-Agent-Reinforcement-Learning/blob/master/Dynamic_Paper_MARL_&_Global_Carbon_Footprint_School_of_AI_ipynb.ipynb
 
 
