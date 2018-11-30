@@ -68,15 +68,13 @@ In reinforcement learning, an agent learns to behave in order to maximize its cu
 
 Q-Learning is a model-free, off-policy action-value estimation method that always converges to the optimal policy, based on a so-called “Q-table”, consisting of all possible states (rows) and actions (columns) in an environment, showing the result of the so-called “Q-function” for each given state-action pair. The Q-function, denoted as
 				
->>>>>>>$Q^\ast\left(s,a\right)=r\left(s,a\right)+\ \gamma\ \ast\ Q\ast\left(s\prime,a\right)$
-
-
+See formula in repository version, or https://colab.research.google.com/github/Valdini/Carbon-Footprint-Multi-Agent-Reinforcement-Learning/blob/master/Dynamic_Paper_MARL_&_Global_Carbon_Footprint_School_of_AI_ipynb.ipynb
 
 , calculates Q-values, representing the reward r of an action a in a given state s, plus the maximum reward achievable by the best action a’ in the next state s’, discounted by the factor gamma $\gamma$ (temporal-difference learning). Q* denotes the highest Q-value for a given row, thus defines the action in a given state that achieves the highest Q-value (Valkov, 2017). 
 
 The Q-table is updated after each iteration by
 
->>>>>$Q(s,a)\ =\ (1-\alpha)\ \ \ast\ \ Q(s,a)\ +\ \alpha\ast\ (r\ +\ \gamma\ \ \ast\ {\ Q}^\ast(s\prime,a))$
+See formula in repository version, or https://colab.research.google.com/github/Valdini/Carbon-Footprint-Multi-Agent-Reinforcement-Learning/blob/master/Dynamic_Paper_MARL_&_Global_Carbon_Footprint_School_of_AI_ipynb.ipynb
 
 , where $\alpha$ denotes the learning rate of the algorithm and ${\ Q}^\ast(s\prime,a)$ denotes the value of the next state as the maximal Q-value for the best action in the next state (Kansal & Martin, 2018).
 In order for the agent to not just exploit the best action based on previous observations and the learned Q-values, but also keep exploring the other options in order to receive Q-values for the whole action space, agents are adjusted to sometimes take randomized actions, as controlled by the parameter epsilon ε (Littman, 2000). 
@@ -147,12 +145,9 @@ capita CO2 consumption of all agents combined.
 
 <br> | <br>| <br>5 Periods| <br>10 Periods| <br>15 Periods| <br>20 Periods| <br>25 Periods| <br>30 Periods
 --- | ---
-Cumulative reward | Utilitarian| 11.04| 24.21| 34.19| 48.46| 64.37| 73.31
-Cumulative reward | Selfish | 7.44| 16.17| 16.87| 28.96| 25.64| 33.78
-Cumulative reward | Greedy| 10.19| 17.28| 23.02| 28.07| 39.43| 44.87
-Final global state | Utilitarian| 4.26|	3.60|	2.70|	1.93|	0.86|	0.18
-Final global state | Selfish| 4.44|	3.97|	2.95|	2.77|	1.40|	0.92
-Final global state | Greedy| 4.62|	4.05|	3.35|	2.61|	2.37|	1.67
+
+
+See table in repository version, or https://colab.research.google.com/github/Valdini/Carbon-Footprint-Multi-Agent-Reinforcement-Learning/blob/master/Dynamic_Paper_MARL_&_Global_Carbon_Footprint_School_of_AI_ipynb.ipynb
 
 
 <br>When looking at above-shown table, as well as the policies and the Q-tables of the three agents (samples can be found in the “Appendix” section), the following observations can be inferred.
